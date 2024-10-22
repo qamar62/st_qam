@@ -18,6 +18,9 @@ with col2:
     st.write(
         "Senior Web Developer , Digital Marketing Expert."
     )
+    st.caption(
+        "+971529733130 , qam600@gmail.com"
+    )
     if st.button("✉️ Contact Me"):
         show_contact_form()
 
