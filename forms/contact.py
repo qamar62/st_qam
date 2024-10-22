@@ -3,6 +3,7 @@ import re
 import streamlit as st
 import requests  # pip install requests
 
+import json
 
 WEBHOOK_URL = st.secrets["WEBHOOK_URL"]
 
@@ -13,9 +14,12 @@ def is_valid_email(email):
     return re.match(email_pattern, email) is not None
 
 
+
+
 def contact_form():
     with st.form("contact_form"):
         name = st.text_input("First Name")
+        phone = st.text_input("Phone number")
         email = st.text_input("Email Address")
         message = st.text_area("Your Message")
         submit_button = st.form_submit_button("Submit")
@@ -27,6 +31,9 @@ def contact_form():
 
         if not name:
             st.error("Please provide your name.", icon="🧑")
+            st.stop()
+        if not phone:
+            st.error("Please provide your number.", icon="🧑")
             st.stop()
 
         if not email:
@@ -42,10 +49,12 @@ def contact_form():
             st.stop()
 
         # Prepare the data payload and send it to the specified webhook URL
-        data = {"email": email, "name": name, "message": message}
+        data = {"email": email, "name": name, 'phone':phone, "message": message}
         response = requests.post(WEBHOOK_URL, json=data)
 
         if response.status_code == 200:
             st.success("Your message has been sent successfully! 🎉", icon="🚀")
+             # Show the balloons animation
+            st.balloons()
         else:
             st.error("There was an error sending your message.", icon="😨")
