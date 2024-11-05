@@ -34,7 +34,7 @@ def project_card(title, description, link):
 # Example project information
 project_title = "Trave and Tour Booking App"
 project_description = "A web application for booking tours with integrated payment processing and real-time availability."
-project_link = "arabianknightstours.com"
+project_link = "https://arabianknightstours.com"
 
 # Create project card
 project_card(project_title, project_description, project_link)
@@ -43,13 +43,13 @@ def project_card(title, description, link):
     st.markdown(f"<div style='border: 1px solid #ccc; border-radius: 10px; padding: 15px; margin: 10px;'>"
                  f"<h3 style='margin: 0;'>{title}</h3>"
                  f"<p>{description}</p>"
-                 f"<a href='{link}' target='_blank' style='color: blue;'>View Project</a>"
+                 f"<a href='{link}' target='_blank' style='color: blue;'>View Project </a>"
                  f"</div>", unsafe_allow_html=True)
 
 # Example project information
 project_title = "Car Rental System backend/Frontend"
 project_description = "A web application for booking car rental with integrated payment processing and real-time availability."
-project_link = "justdrivecar.me"
+project_link = "https://www.justdrivecar.me"
 
 # Create project card
 project_card(project_title, project_description, project_link)
