@@ -32,7 +32,7 @@ def project_card(title, description, link):
                  f"</div>", unsafe_allow_html=True)
 
 # Example project information
-project_title = "Trave and Tour Booking App"
+project_title = "Travel and Tour Booking App"
 project_description = "A web application for booking tours with integrated payment processing and real-time availability."
 project_link = "https://arabianknightstours.com"
 
