@@ -12,8 +12,8 @@ st.write(
    - Travel system 
    - Car rental system 
    - CRM complete backend solution 
-- AI Chat Integration for [Specific Project/Client Name]
-Developed a custom AI-powered chatbot using NLP libraries, achieving a 95% accuracy in user intent recognition. Integrated seamlessly with Django back-end, processing real-time customer queries and providing instant solutions.
+- AI Chat Integration for Travel System
+Developed a custom AI-powered chatbot using Botpress, Openai, Ollama3.2 , achieving a 95% accuracy in user intent recognition. Integrated seamlessly with Django back-end, processing real-time customer queries and providing instant solutions.
 
 - Automated Workflow System for Social Media and booking
 Created an automated workflow solution integrating Google APIs to streamline data entry, analysis, and reporting. Reduced manual processing time by over 50%, enhancing productivity and data accuracy.
