@@ -27,6 +27,15 @@ with col2:
 
 # --- EXPERIENCE & QUALIFICATIONS ---
 st.write("\n")
+st.subheader("Professional Summary", anchor=False)
+st.write(
+    """
+    Professional Summary
+    Python Django Developer and DevOps Engineer with extensive experience in AI chat integration, automation workflows, and cloud computing. Proficient in digital marketing, Google API integration, and containerized application deployment using Docker. Strong understanding of front-end technologies (React) with hands-on experience in troubleshooting and optimizing workflows. Passionate about delivering high-impact solutions that streamline operations and drive user engagement.
+    """
+)
+# --- EXPERIENCE & QUALIFICATIONS ---
+st.write("\n")
 st.subheader("Experience & Qualifications", anchor=False)
 st.write(
     """
@@ -39,13 +48,14 @@ st.write(
 
 # --- SKILLS ---
 st.write("\n")
-st.subheader("Hard Skills", anchor=False)
+st.subheader(" Technical Skills", anchor=False)
 st.write(
     """
-    - Programming: Python (Django, Streamlit, DevOps, Cloud Computing)
-    - SEM, SEO, 
-    - Automation, Server Deployment , Ai chat integration, Whatsapp Bot 
-    - Digital Ocean project Deployment: 
-    - Databases: Postgres
+   
+- Languages & Frameworks  : Python, Django, HTML, CSS, JavaScript, React (basic)
+- DevOps & Cloud          : Docker, GitHub, CI/CD, Google Cloud Platform (GCP), AWS, Microsoft Azure
+- Automation & Integration: AI Chat Integration, Google API, Workflow Automation
+- Digital Marketing       : SEO, Google Analytics, AdWords, Social Media Marketing
+- Other                   : Windows troubleshooting, basic Linux, REST APIs, Version Control
     """
 )
